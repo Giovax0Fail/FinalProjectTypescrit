@@ -19,5 +19,6 @@
   "homepage": "https://github.com/Giovax0Fail/FinalProjectTypescrit#readme",
   "devDependencies": {
     "typescript": "^4.5.5"
-  }
+  },
+  "dependencies": {}
 }
