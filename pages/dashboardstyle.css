@@ -1,0 +1,27 @@
+header
+{
+    
+    width: 100%;
+    padding: 1% 0;
+    background: #76b852; /* fallback for old browsers */
+    background: rgb(141,194,111);
+    background: linear-gradient(90deg, rgb(141, 194, 111) 0%, rgba(118,184,82,1) 50%);
+}
+
+footer
+{
+    
+    width: 100%;
+    padding: 3% 0;
+    background: #76b852; /* fallback for old browsers */
+    background: rgb(141,194,111);
+    background: linear-gradient(90deg, rgb(141, 194, 111) 0%, rgba(118,184,82,1) 50%);
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
