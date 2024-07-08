@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script defer src="login.js"></script>
         <link rel="stylesheet" href="loginstyle.css" />
         <title>Log In Page</title>
     </head>
     <body>
         <div class="login-page">
-            <div class="form">
+            <div id="form" class="form">
                 <form
                     action="https://api-qkhq253w2q-ew.a.run.app/sign-in"
                     method="post"
@@ -37,7 +38,9 @@
                     <br />
                     <input type="submit" value="login" />
                 </form>
-                <p>Nuovo utente? <a href="signup.html">Registrati</a></p>
+                <p>
+                    Nuovo utente? <a href="../signup/signup.html">Registrati</a>
+                </p>
             </div>
         </div>
     </body>
