@@ -1,7 +1,7 @@
-div.form label{
+div.form label {
     font-size: larger;
     color: #031803;
-    text-shadow:2px 3px 7px rgba(206,89,55,0.77) ;
+    text-shadow: 2px 3px 7px rgba(206, 89, 55, 0.77);
     display: block; /* add this */
     padding: 6%;
 }
@@ -10,8 +10,8 @@ div.form label{
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
-  }
-  .form {
+}
+.form {
     position: relative;
     z-index: 1;
     background: #ffffff9a;
@@ -21,9 +21,9 @@ div.form label{
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.296);
     border-radius: 10px;
-  }
-  .form input {
-    font-family:  sans-serif;
+}
+.form input {
+    font-family: sans-serif;
     outline: 0;
     background: #f2f2f2;
     width: 100%;
@@ -34,30 +34,28 @@ div.form label{
     font-size: 14px;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.131);
-  }
-  .form input[type=submit] {
-    font-family:  sans-serif;
+}
+.form input[type="submit"] {
+    font-family: sans-serif;
     outline: 0;
-    background: #4CAF50;
+    background: #4caf50;
     width: 100%;
     padding: 15px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14px;
     cursor: pointer;
-  }
+}
 
-  input[type=submit]:hover{
-    
+input[type="submit"]:hover {
     background-color: #1a5d1d;
-  }
+}
 
-  a
-  {
-    color: #4CAF50;
-  }
-  
-  /* checkbox style */
-  .container {
+a {
+    color: #4caf50;
+}
+
+/* checkbox style */
+.container {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -68,52 +66,51 @@ div.form label{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container input {
+}
+
+/* Hide the browser's default checkbox */
+.container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
+}
+
+/* Create a custom checkbox */
+.checkmark {
     position: absolute;
     top: 16px;
     left: 35px;
     height: 25px;
     width: 25px;
     background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
     background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
     background-color: #1a5d1d;
-    
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
     display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -123,13 +120,17 @@ div.form label{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
-  
-  body {
+}
+
+body {
     background: #76b852; /* fallback for old browsers */
-    background: rgb(141,194,111);
-    background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
+    background: rgb(141, 194, 111);
+    background: linear-gradient(
+        90deg,
+        rgba(141, 194, 111, 1) 0%,
+        rgba(118, 184, 82, 1) 50%
+    );
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;      
-  }
+    -moz-osx-font-smoothing: grayscale;
+}

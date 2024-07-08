@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="loginstyle.css" />
+        <title>Log In Page</title>
+    </head>
+    <body>
+        <div class="login-page">
+            <div class="form">
+                <form
+                    action="https://api-qkhq253w2q-ew.a.run.app/sign-in"
+                    method="post"
+                    class="register-form"
+                >
+                    <label for="email">Email</label>
+
+                    <input type="email" id="email" name="email" required />
+                    <br />
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                        minlength="6"
+                    />
+                    <br />
+
+                    <label class="container"
+                        >Ricordami
+                        <input type="checkbox" checked="checked" />
+                        <span class="checkmark"></span>
+                    </label>
+                    <br />
+                    <input type="submit" value="login" />
+                </form>
+                <p>Nuovo utente? <a href="signup.html">Registrati</a></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,7 +1,7 @@
-div.form label{
+div.form label {
     font-size: larger;
     color: #031803;
-    text-shadow:2px 3px 7px rgba(206,89,55,0.77) ;
+    text-shadow: 2px 3px 7px rgba(206, 89, 55, 0.77);
     display: block; /* add this */
     padding: 6%;
 }
@@ -10,8 +10,8 @@ div.form label{
     width: 360px;
     padding: 8% 0 0;
     margin: auto;
-  }
-  .form {
+}
+.form {
     position: relative;
     z-index: 1;
     background: #ffffff9a;
@@ -19,11 +19,12 @@ div.form label{
     margin: 0 auto 100px;
     padding: 45px;
     text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.278), 0 5px 5px 0 rgba(0, 0, 0, 0.353);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.278),
+        0 5px 5px 0 rgba(0, 0, 0, 0.353);
     border-radius: 10px;
-  }
-  .form input {
-    font-family:  sans-serif;
+}
+.form input {
+    font-family: sans-serif;
     outline: 0;
     background: #f2f2f2;
     width: 100%;
@@ -34,37 +35,38 @@ div.form label{
     font-size: 14px;
     border-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.131);
-  }
-  .form input[type=submit] {
-    font-family:  sans-serif;
+}
+.form input[type="submit"] {
+    font-family: sans-serif;
     outline: 0;
-    background: #4CAF50;
+    background: #4caf50;
     width: 100%;
     border: 0;
     padding: 15px;
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
     margin-top: 15%;
-  }
-  .form input[type=submit]:hover {
+}
+.form input[type="submit"]:hover {
     background: #1a5d1d;
-    
-  }
+}
 
-  a
-  {
-    color: #4CAF50;
-  }
-  
-  
-  body {
+a {
+    color: #4caf50;
+}
+
+body {
     background: #76b852; /* fallback for old browsers */
-    background: rgb(141,194,111);
-    background: linear-gradient(90deg, rgb(141, 194, 111) 0%, rgba(118,184,82,1) 50%);
+    background: rgb(141, 194, 111);
+    background: linear-gradient(
+        90deg,
+        rgb(141, 194, 111) 0%,
+        rgba(118, 184, 82, 1) 50%
+    );
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;      
-  }
+    -moz-osx-font-smoothing: grayscale;
+}
