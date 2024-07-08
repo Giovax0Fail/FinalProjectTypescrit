@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script defer src="login.js"></script>
+        <script defer src="Validation.js"></script>
         <link rel="stylesheet" href="loginstyle.css" />
         <title>Log In Page</title>
     </head>
@@ -13,7 +14,7 @@
                 <form
                     action="https://api-qkhq253w2q-ew.a.run.app/sign-in"
                     method="post"
-                    class="register-form"
+                    class="register-form" onclick="validate()"
                 >
                     <label for="email">Email</label>
 
