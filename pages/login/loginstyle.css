@@ -134,3 +134,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+}

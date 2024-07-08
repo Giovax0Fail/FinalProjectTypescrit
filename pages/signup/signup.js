@@ -8,13 +8,18 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-const form = document.getElementById("form");
-const errorMessage = document.getElementById("error-message");
+const signupForm = document.getElementById("form");
+const errorMessageSignUp = document.getElementById("error-message");
 form.addEventListener("submit", (e) => __awaiter(void 0, void 0, void 0, function* () {
     e.preventDefault();
+    let fullName = document.getElementById("fullName");
     let email = document.getElementById("email");
     let password = document.getElementById("password");
-    let values = { email: email.value, password: password.value };
+    let values = {
+        fullName: fullName.value,
+        email: email.value,
+        password: password.value,
+    };
     console.log(values);
     try {
         const response = yield fetch("https://api-qkhq253w2q-ew.a.run.app/sign-in", {
@@ -30,10 +35,7 @@ form.addEventListener("submit", (e) => __awaiter(void 0, void 0, void 0, functio
         }
         const json = yield response.json();
         console.log(json);
-        if (localStorage.getItem("token") === null) {
-            localStorage.setItem("token", json.token);
-        }
-        location.href = "../profile/profile.html";
+        location.href = "../login/login.html";
     }
     catch (error) {
         console.error(error.message);

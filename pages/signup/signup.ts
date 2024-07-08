@@ -1,13 +1,16 @@
-const form: HTMLFormElement = document.getElementById(
+const signupForm: HTMLFormElement = document.getElementById(
     "form"
 ) as HTMLFormElement;
 
-const errorMessage: HTMLParagraphElement = document.getElementById(
+const errorMessageSignUp: HTMLParagraphElement = document.getElementById(
     "error-message"
 ) as HTMLParagraphElement;
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    let fullName: HTMLInputElement = document.getElementById(
+        "fullName"
+    ) as HTMLInputElement;
     let email: HTMLInputElement = document.getElementById(
         "email"
     ) as HTMLInputElement;
@@ -15,7 +18,11 @@ form.addEventListener("submit", async (e) => {
         "password"
     ) as HTMLInputElement;
 
-    let values = { email: email.value, password: password.value };
+    let values = {
+        fullName: fullName.value,
+        email: email.value,
+        password: password.value,
+    };
 
     console.log(values);
 
@@ -36,10 +43,7 @@ form.addEventListener("submit", async (e) => {
         }
         const json = await response.json();
         console.log(json);
-        if (localStorage.getItem("token") === null) {
-            localStorage.setItem("token", json.token);
-        }
-        location.href = "../profile/profile.html";
+        location.href = "../login/login.html";
     } catch (error: any) {
         console.error(error.message);
     }
