@@ -38,6 +38,44 @@ function jsonToHtml(json, parentElement) {
 }
 // Initialize the root element
 const rootElement = document.getElementById("json-container");
+function createForm() {
+    const form = document.createElement("form");
+    rootElement === null || rootElement === void 0 ? void 0 : rootElement.appendChild(form);
+    const textArea = document.createElement("textarea");
+    textArea.rows = 10;
+    textArea.cols = 60;
+    textArea.required = true;
+    textArea.minLength = 100;
+    form.appendChild(textArea);
+    const submitButton = document.createElement("input");
+    submitButton.type = "submit";
+    submitButton.value = "crea profilo";
+    form.appendChild(submitButton);
+    form.addEventListener("submit", (e) => __awaiter(this, void 0, void 0, function* () {
+        e.preventDefault();
+        try {
+            let value = {
+                description: textArea.value,
+            };
+            console.log(value);
+            // let token = localStorage.getItem("token");
+            // const response = await fetch(
+            //     "https://api-qkhq253w2q-ew.a.run.app/profile",
+            //     {
+            //         headers: {
+            //             "Content-Type": "application/json",
+            //             Authorization: "Bearer " + token,
+            //         },
+            //         method: "POST",
+            //         body: JSON.stringify(value),
+            //     }
+            // );
+        }
+        catch (error) {
+            console.error(error.message);
+        }
+    }));
+}
 function getData() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
@@ -49,16 +87,20 @@ function getData() {
                 method: "GET",
             });
             if (!response.ok) {
-                throw new Error(`Response status: ${response.status}`);
+                // means user hasn't generated profile data yet so we present the form
+                createForm();
             }
-            const json = yield response.json();
-            console.log(json);
-            let photo = document.createElement("img");
-            photo.src = json.photo;
-            photo.className = "photo";
-            rootElement === null || rootElement === void 0 ? void 0 : rootElement.append(photo);
-            if (rootElement) {
-                jsonToHtml(json, rootElement);
+            else {
+                // display profile data
+                const json = yield response.json();
+                console.log(json);
+                let photo = document.createElement("img");
+                photo.src = json.photo;
+                photo.className = "photo";
+                rootElement === null || rootElement === void 0 ? void 0 : rootElement.append(photo);
+                if (rootElement) {
+                    jsonToHtml(json, rootElement);
+                }
             }
         }
         catch (error) {

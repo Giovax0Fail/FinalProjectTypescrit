@@ -46,6 +46,45 @@ function jsonToHtml(json: JSONObject, parentElement: HTMLElement): void {
 // Initialize the root element
 const rootElement = document.getElementById("json-container");
 
+function createForm() {
+    const form = document.createElement("form");
+    rootElement?.appendChild(form);
+    const textArea = document.createElement("textarea");
+    textArea.rows = 10;
+    textArea.cols = 60;
+    textArea.required = true;
+    textArea.minLength = 100;
+    form.appendChild(textArea);
+    const submitButton = document.createElement("input");
+    submitButton.type = "submit";
+    submitButton.value = "crea profilo";
+    form.appendChild(submitButton);
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        try {
+            let value = {
+                description: textArea.value,
+            };
+            console.log(value);
+            // let token = localStorage.getItem("token");
+            // const response = await fetch(
+            //     "https://api-qkhq253w2q-ew.a.run.app/profile",
+            //     {
+            //         headers: {
+            //             "Content-Type": "application/json",
+            //             Authorization: "Bearer " + token,
+            //         },
+            //         method: "POST",
+            //         body: JSON.stringify(value),
+            //     }
+            // );
+        } catch (error: any) {
+            console.error(error.message);
+        }
+    });
+}
+
 async function getData() {
     try {
         let token = localStorage.getItem("token");
@@ -59,16 +98,19 @@ async function getData() {
             }
         );
         if (!response.ok) {
-            throw new Error(`Response status: ${response.status}`);
-        }
-        const json = await response.json();
-        console.log(json);
-        let photo = document.createElement("img");
-        photo.src = json.photo;
-        photo.className = "photo";
-        rootElement?.append(photo);
-        if (rootElement) {
-            jsonToHtml(json, rootElement);
+            // means user hasn't generated profile data yet so we present the form
+            createForm();
+        } else {
+            // display profile data
+            const json = await response.json();
+            console.log(json);
+            let photo = document.createElement("img");
+            photo.src = json.photo;
+            photo.className = "photo";
+            rootElement?.append(photo);
+            if (rootElement) {
+                jsonToHtml(json, rootElement);
+            }
         }
     } catch (error: any) {
         console.error(error.message);

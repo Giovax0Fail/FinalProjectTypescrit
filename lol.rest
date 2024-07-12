@@ -13,7 +13,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5M
 ###
 
 GET https://api-qkhq253w2q-ew.a.run.app/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5MzZmTEV1YmRUUDlnIiwiaWF0IjoxNzIwNzcxNTI1LCJleHAiOjE3MjA4NTc5MjV9.Eeq06R-3PzhXZdJtuyjh4AaxUk-cExhyATkfd2tQmZo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5MzZmTEV1YmRUUDlnIiwiaWF0IjoxNzIwNzc1NDYzLCJleHAiOjE3MjA4NjE4NjN9.JrqH7T_mHWL3XEC-ICnFa_5zG4dVcyu46bcedCVRMgM
 
 
 ###
