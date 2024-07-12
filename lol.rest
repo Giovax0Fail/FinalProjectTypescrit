@@ -1,11 +1,10 @@
 GET https://api-qkhq253w2q-ew.a.run.app/users?page=1&limit=10
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVUa0xHQjBScXBDcm1JYVpzUE1oIiwiaWF0IjoxNzE5ODI3NjQ0LCJleHAiOjE3MTk5MTQwNDR9.NpHGQQDSFndSXj1TUoRH9Hd_3wlHKwG94PJKpjqNI48
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5MzZmTEV1YmRUUDlnIiwiaWF0IjoxNzIwNzcxNTI1LCJleHAiOjE3MjA4NTc5MjV9.Eeq06R-3PzhXZdJtuyjh4AaxUk-cExhyATkfd2tQmZo
 ###
 
 POST https://api-qkhq253w2q-ew.a.run.app/profile
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5MzZmTEV1YmRUUDlnIiwiaWF0IjoxNzE5ODI0OTA2LCJleHAiOjE3MTk5MTEzMDZ9.TJcO7nqQH7pnzaqU6H7gky9jzn6B2ySSSexNVrFsu6E
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5MzZmTEV1YmRUUDlnIiwiaWF0IjoxNzIwNzcxNTI1LCJleHAiOjE3MjA4NTc5MjV9.Eeq06R-3PzhXZdJtuyjh4AaxUk-cExhyATkfd2tQmZo
 
 {
     "description": "Sono uno sviluppatore python senior di catanzaro.  Ho lavorato da almavaiva e ho insegnato il modulo di python ad i ragazzi dell'its web e mobile specialist. Sono un ragazzo alto 1.80 cm, la barba ed i capelli ed occhi marroni.Peso 60kg e sono un ectomorfo snello. Il mio segno zodiacale è quello del cancro. Ho 40 anni. Il mio colore preferito è grigio. Sono un tipo mite, ssempre disponibile a chiarire i dubbi dei miei studenti, infatti chiedevo spesso in aula 'E voi, come lo fareste questo esercizzio?' Mi piace programmare tutto il giorno, e mi piace l'ide chiamato PyCharm. Lo consiglio a tutti, è il mio preferito. "
@@ -14,10 +13,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5M
 ###
 
 GET https://api-qkhq253w2q-ew.a.run.app/profile
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5MzZmTEV1YmRUUDlnIiwiaWF0IjoxNzIwNDMzMzgwLCJleHAiOjE3MjA1MTk3ODB9.S-fDuXBA_o_FRVFRhoCjxqCnaJ91H7JEsJI1njNHqsE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5MzZmTEV1YmRUUDlnIiwiaWF0IjoxNzIwNzcxNTI1LCJleHAiOjE3MjA4NTc5MjV9.Eeq06R-3PzhXZdJtuyjh4AaxUk-cExhyATkfd2tQmZo
 
 
 ###
 
 POST https://api-qkhq253w2q-ew.a.run.app/premium/profile-image
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5MzZmTEV1YmRUUDlnIiwiaWF0IjoxNzE5ODI0OTA2LCJleHAiOjE3MTk5MTEzMDZ9.TJcO7nqQH7pnzaqU6H7gky9jzn6B2ySSSexNVrFsu6E
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVSeVJBeEE5MzZmTEV1YmRUUDlnIiwiaWF0IjoxNzIwNzcxNTI1LCJleHAiOjE3MjA4NTc5MjV9.Eeq06R-3PzhXZdJtuyjh4AaxUk-cExhyATkfd2tQmZo

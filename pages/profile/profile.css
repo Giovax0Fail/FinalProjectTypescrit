@@ -1,0 +1,17 @@
+.json-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.json-key {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.json-value {
+    margin-left: 10px;
+}
+
+.photo {
+    width: 300px;
+}
