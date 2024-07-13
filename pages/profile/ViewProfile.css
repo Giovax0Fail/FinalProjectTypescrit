@@ -1,4 +1,3 @@
-/* Profile UI & Page */
 * {
     margin: 0;
 }
@@ -45,7 +44,7 @@ body {
     right: 14%;
 }
 
-input,button{
+button{
     font-family: sans-serif;
     outline: 0;
     background: #f2f2f2bf;
@@ -61,10 +60,16 @@ input,button{
     cursor: pointer;
 }
 
-button+input:hover {
+button:hover {
     background-color: #1a5d1d;
 }
+/* TextStyle */
+td {
 
+    color: #252525ce;
+    text-shadow: 2px 3px 7px rgba(206, 89, 55, 0.77);
+
+}
 /* header */
 
 header {
@@ -106,28 +111,4 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-}
-
-/* JsonLogic */
-.json-row {
-    display: flex;
-    margin-bottom: 5px;
-}
-
-.json-key {
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.json-value {
-    margin-left: 10px;
-}
-
-.photo {
-    width: 300px;
-}
-
-textarea {
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
 }

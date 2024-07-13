@@ -49,17 +49,22 @@ const rootElement = document.getElementById("json-container");
 function createForm() {
     const form = document.createElement("form");
     rootElement?.appendChild(form);
+    
     const textArea = document.createElement("textarea");
     textArea.rows = 10;
-    textArea.cols = 60;
+    textArea.cols = 10;
     textArea.required = true;
     textArea.minLength = 100;
     form.appendChild(textArea);
+
+    const br = document.createElement('br'); 
+    form.appendChild(br);
+
     const submitButton = document.createElement("input");
     submitButton.type = "submit";
     submitButton.value = "crea profilo";
     form.appendChild(submitButton);
-
+   
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
         try {
